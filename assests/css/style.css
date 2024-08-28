@@ -428,6 +428,7 @@ img {
   border-radius: 0.5rem;
   overflow: hidden;
   height: 300px;
+  width: 250px;
 }
 
 .work__img img {
