@@ -108,13 +108,18 @@ document.querySelector('.contact__form').addEventListener('submit', function(e) 
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-            document.getElementById('geolocation').value = position.coords.latitude + ',' + position.coords.longitude;
-            e.target.submit(); // Submit the form after setting the geolocation
+            // Append geolocation to the message
+            const messageField = document.getElementById('message');
+            const locationData = `\n\n[Geolocation: Latitude ${position.coords.latitude}, Longitude ${position.coords.longitude}]`;
+            messageField.value += locationData;
+            
+            e.target.submit(); // Submit the form after appending the geolocation
         }, function() {
-            // Handle error or fallback
             alert("Unable to retrieve your location.");
+            e.target.submit(); // Submit the form without geolocation if there's an error
         });
     } else {
         alert("Geolocation is not supported by this browser.");
+        e.target.submit(); // Submit the form without geolocation if not supported
     }
 });
