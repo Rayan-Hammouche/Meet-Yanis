@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*===== AUTO TEXT EFFECT ANIMATION =====*/
 
 const containerEl = document.querySelector(".container");
-const careers = ["Copywritter", "Developer", "Designer", "Freelancer"];
+const careers = ["Copywriter", "Developer", "Designer", "Freelancer"];
 
 let careerIndex = 0;
 let characterIndex = 0;
