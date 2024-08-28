@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /*===== AUTO TEXT EFFECT ANIMATION =====*/
 
 const containerEl = document.querySelector(".container");
-const careers = ["Copywriter", "Developer", "Designer", "Freelancer"];
+const careers = ["Copywritter", "Developer", "Designer", "Freelancer"];
 
 let careerIndex = 0;
 let characterIndex = 0;
@@ -100,3 +100,5 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+
+/*==================== GEOLOCALISATION ====================*/
