@@ -245,14 +245,12 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-
-                    <form action="mailto:yanisrayanhammouche@gmail.com" method="post" enctype="text/plain">
+                    <form action="process_form.php" method="POST" class="contact__form">
                         <input type="text" name="name" placeholder="Name" class="contact__input" required>
                         <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                        <textarea name="message" placeholder="Message" cols="30" rows="10" class="contact__input" required></textarea>
+                        <textarea name="message" id="message" cols="0" rows="10" class="contact__input" required></textarea>
                         <input type="submit" value="Send" class="contact__btn btn">
                     </form>
-                
                 </div>
 
             </section>
