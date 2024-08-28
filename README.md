@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio! This site is designed to showcase my projects, skills, and achievements in web development and programming. You will find information about my professional experiences, projects I've worked on, and my technical skills.
+Welcome to my portfolio! This site is designed to showcase skills and achievements in web development and programming. You will find information about my professional experience, my technical skills and how to contact me.
 
 ## Table of Contents
 
@@ -28,11 +28,6 @@ To run this site locally, follow these steps:
     cd yanis
     ```
 
-3. Install dependencies (if applicable):
-    ```bash
-    npm install
-    ```
-
 4. Start the development server:
     ```bash
     npm start
@@ -50,6 +45,7 @@ This portfolio highlights the following skills:
 - JavaScript
 - Copywriting
 - UX/UI Design
+- PHP
 
 ## Contact
 
