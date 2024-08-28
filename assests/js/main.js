@@ -100,26 +100,3 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
-
-/*==================== GEOLOCALISATION ====================*/
-
-document.querySelector('.contact__form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            // Append geolocation to the message
-            const messageField = document.getElementById('message');
-            const locationData = `\n\n[Geolocation: Latitude ${position.coords.latitude}, Longitude ${position.coords.longitude}]`;
-            messageField.value += locationData;
-            
-            e.target.submit(); // Submit the form after appending the geolocation
-        }, function() {
-            alert("Unable to retrieve your location.");
-            e.target.submit(); // Submit the form without geolocation if there's an error
-        });
-    } else {
-        alert("Geolocation is not supported by this browser.");
-        e.target.submit(); // Submit the form without geolocation if not supported
-    }
-});
